@@ -1,0 +1,34 @@
+live_config_reload = true
+
+import = [
+  "~/.config/alacritty/themes/themes/catppuccin_macchiato.toml"
+]
+
+[window]
+dimensions.columns = 105
+dimensions.lines = 32
+padding.x = 10
+padding.y = 10
+opacity = 0.8
+blur = true
+
+[font]
+normal.family = "JetBrainsMono Nerd Font"
+normal.style = "Regular"
+size = 14.0
+
+[cursor]
+style = { shape = "Beam", blinking = "Always" }
+thickness = 0.2
+
+[keyboard]
+bindings = [
+  # move to the end of the word
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  # move to the beginning of the word
+  { key = "Left", mods = "Alt", chars = "\u001BB" },
+  # move to the left of the line
+  { key = "Right", mods = "Command", chars = "\u0005" },
+  # move to the beginning of the line
+  { key = "Left", mods = "Command", chars = "\u0001" }
+]

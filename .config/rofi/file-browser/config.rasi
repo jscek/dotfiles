@@ -1,0 +1,9 @@
+configuration {
+	terminal: "kitty";
+
+	filebrowser {
+		default_applications: [
+			{ mime: "text/*", app: "kitty -e vim" }
+		]
+	}
+}

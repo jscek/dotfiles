@@ -1,0 +1,48 @@
+{
+    "layer": "top",
+    "margin": "10 20 0 20",
+    "height": 32,
+    "modules-left": ["hyprland/workspaces" ], 
+    "modules-center": ["clock"],
+    "modules-right": ["bluetooth", "pulseaudio", "network", "battery"],
+    
+    // modules-left
+    "hyprland/workspaces": {
+		"format": "{id}",
+		"persistent-workspaces": {
+			"*": [1, 2, 3, 4, 5, 6]
+		}
+    },
+    "hyprland/window": {
+    	"format": "{initialTitle}"
+    },
+
+    // modules-center
+    "clock": {
+        "format": "{:%H:%M - %d/%m}"
+    },    
+
+    // modules-right    
+    "bluetooth": {
+    	"format-connected": " {device_alias}",
+		"on-click": "hyprctl dispatch exec 'kitty --class kitty-popup bluetui'"
+    },
+    "pulseaudio": {
+    	"format": "{icon}  {volume}",
+		"format-icons": {
+			"default": ["", ""]
+		},
+		"format-muted": "",
+		"on-click": "hyprctl dispatch exec 'kitty --class kitty-popup wiremix'"
+    },
+    "network": {
+		"interval": 10,
+    	"format-wifi": "   {bandwidthUpBytes}  {bandwidthDownBytes}",
+		"tooltip-format-wifi": "{essid} ({signalStrength}%)",
+		"on-click": "hyprctl dispatch exec 'kitty --class kitty-popup impala'"
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    }
+   }

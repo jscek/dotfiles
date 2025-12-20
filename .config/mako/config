@@ -1,0 +1,11 @@
+border-size=2
+border-radius=10
+border-color=#aaaaaaee
+background-color=#1a1b26ff
+height=200
+width=400
+anchor=top-center
+font="Noto Sans" 12
+default-timeout=5000
+margin=10
+padding=10

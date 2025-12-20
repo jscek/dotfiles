@@ -1,0 +1,49 @@
+* {
+	background: #1f1f1f;
+	foreground: white;   
+
+    font: "JetBrainsMono Nerd Font 12";
+
+	/* normal */
+	normal-background: @background;
+	normal-foreground: @foreground;
+
+	/* alternate normal  */
+	alternate-normal-background: @background;
+	alternate-normal-foreground: @foreground;
+
+	urgent-background: @background;
+}
+
+configuration {
+	display-drun: "> ";
+}
+
+window {
+    border-radius: 10px;
+    border: 2px;
+    padding: 5px;
+	width: 800px;
+	height: 400px;
+}
+
+inputbar {
+	padding: 10px;
+	children: [prompt,entry, case-indicator];
+}
+
+
+listview {
+    fixed-height: 0;
+    padding:      5px;
+    scrollbar:    false;
+    spacing:      2px;
+}
+
+element {
+	padding: 10px;
+}
+
+element selected {
+	border-radius: 10px;
+}

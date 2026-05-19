@@ -1,0 +1,27 @@
+# Theme
+theme = tokyonight
+
+# Typography
+font-family = JetBrainsMono Nerd Font
+font-size = 14
+
+# Window
+window-width = 105
+window-height = 32
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+window-padding-x = 8
+window-padding-y = 6
+window-padding-balance = true
+mouse-hide-while-typing = true
+
+# Shell navigation
+keybind = alt+right=text:\x1bf
+keybind = alt+left=text:\x1bb
+keybind = super+right=text:\x05
+keybind = super+left=text:\x01
+
+# Quick terminal
+quick-terminal-position = top
+quick-terminal-size = 35%
+keybind = global:cmd+backquote=toggle_quick_terminal
